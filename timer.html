@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+
+    <title>Timer</title>
+
+  </head>
+
+  <body>
+
+      <div class="row">
+          <p id ="minutes">25:</p> 
+          <p id ="compteur">00</p>
+      </div>
+           <div class="row">
+                <p id ="minutes5">5:</p> 
+                <p id ="compteur5">00</p>
+        </div>
+
+  	<button id="action">25 MIN</button>
+    <button id="repos">5 MIN</button>
+    <button id="reset">RESET</button>
+    <button id="stop">STOP</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+
+    $(document).ready(function(){
+    	$("#action").click(function(){
+		    var timer=60;
+        var minu=25;
+		    setInterval(function(){
+			     timer-=1;
+			       $("#compteur").html(timer)
+		}, 1000);
+
+          setInterval(function(){
+           minu-=1;
+           console.log(minu);
+             $("#minutes").html(minu)
+    }, 60000);
+
+     });
+
+        $("#repos").click(function(){
+        var timer=60;
+        var minu=5;
+        setInterval(function(){
+           timer-=1;
+             $("#compteur5").html(timer)
+    }, 1000);
+
+          setInterval(function(){
+           minu-=1;
+           console.log(minu);
+             $("#minutes5").html(minu)
+    }, 60000); 
+
+    });
+
+     $("#reset").click(function(){
+        timer=60;
+        minu=24;
+        clearInterval(timer);
+        clearInterval(minu);
+           $("#compteur").html(timer)
+           $("#minutes").html(minu)
+        });
+
+     $("#stop").click(function(){
+        timer=0;
+        minu=0;
+      clearInterval(timer);
+      clearInterval(minu);
+        $("#compteur").html(timer)
+        $("#minutes").html(minu)
+     });
+
+   /*  function counter(){
+      timer--;
+      $("#minutes").html(Math.floor(timer/60))
+      $("#compteur").html(Math.floor(timer%60))
+        if (timer==0){
+          if(minu==0){
+            minu=1;
+            timer=phase[i]
+          }
+        }
+     } */
+
+    });
+
+
+
+
+ 
+
+    </script>
+
+  </body>
+</html>

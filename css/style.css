@@ -1,0 +1,88 @@
+
+body {
+	text-align: center;
+	margin-top: 10%;
+	background-color: black;
+	font-family: 'Bungee Inline', cursive;
+}
+
+#minutes, #compteur {
+	font-size: 60px;
+	background-color: #000000;
+	display: inline-block;
+	margin: auto;
+	margin-bottom: 2%; 
+	width:100px;
+	line-height:50px;
+	text-align:center;
+	vertical-align:middle;
+	color:white;
+	text-decoration:none;
+}
+
+#minutes5, #compteur5 {
+	font-size: 60px;
+	background-color: #000000;
+	display: inline-block;
+	margin: auto;
+	margin-bottom: 2%; 
+	width:100px;
+	line-height:50px;
+	text-align:center;
+	vertical-align:middle;
+	color:white;
+	text-decoration:none;
+}
+
+
+#action {
+	background-color: #66CDAA;
+	display: inline;
+	border-radius: 10px;
+	width:150px;
+	line-height:50px;
+	text-align:center;
+	vertical-align:middle;
+	color:black;
+	font-family: 'Bungee Inline', cursive;
+	text-decoration:none;
+}
+
+#stop {
+	background-color: #DC143C;
+	display: inline;
+	 border-radius: 10px;
+	width:150px;
+	line-height:50px;
+	text-align:center;
+	vertical-align:middle;
+	color:black;
+	font-family: 'Bungee Inline', cursive;
+	text-decoration:none;
+}
+
+#reset {
+	background-color: #F0E68C;
+	display: inline;
+	 border-radius: 10px;
+	width:150px;
+	line-height:50px;
+	text-align:center;
+	vertical-align:middle;
+	color:black;
+	font-family: 'Bungee Inline', cursive;
+	text-decoration:none;
+}
+
+#repos {
+	background-color: #FFFFF0;
+	display: inline;
+	 border-radius: 10px;
+	width:150px;
+	line-height:50px;
+	text-align:center;
+	vertical-align:middle;
+	color:black;
+	font-family: 'Bungee Inline', cursive;
+	text-decoration:none;
+}
